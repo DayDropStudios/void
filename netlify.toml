@@ -1,0 +1,14 @@
+
+[build]
+  functions = "functions"
+  publish = "public"
+
+[[redirects]]
+  from = "/track"
+  to = "/.netlify/functions/track"
+  status = 200
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
